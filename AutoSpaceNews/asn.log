@@ -1,0 +1,1440 @@
+21:26:18 [INFO] asn_main: ASN starting...
+21:26:18 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+21:26:18 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+21:26:18 [INFO] apscheduler.scheduler: Scheduler started
+21:26:18 [INFO] asn_scheduler: Scheduler started: every 120 min
+21:26:19 [INFO] asn_main: Initial data fetch...
+21:26:19 [INFO] asn_scheduler: === Update cycle start ===
+21:26:20 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+21:26:20 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+21:26:23 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+21:26:30 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+21:26:30 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+21:26:34 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+21:26:39 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+21:26:40 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+21:26:41 [INFO] httpx: HTTP Request: GET https://satnews.com/feed/ "HTTP/1.1 403 Forbidden"
+21:26:44 [ERROR] asn_fetchers.asn_rss: RSS [SatNews]: Client error '403 Forbidden' for url 'https://satnews.com/feed/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+21:26:45 [INFO] httpx: HTTP Request: GET https://warwingsdaily.com/feed/ "HTTP/1.1 200 OK"
+21:26:47 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+21:26:48 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+21:26:52 [INFO] httpx: HTTP Request: GET https://www.aero-news.net/news/rssfeed.xml "HTTP/1.1 200 OK"
+21:26:54 [INFO] httpx: HTTP Request: GET https://theaviationist.com/feed/ "HTTP/1.1 200 OK"
+21:26:54 [INFO] asn_fetchers.asn_rss: RSS: 149 articles total
+21:26:54 [INFO] asn_scheduler: [RSS] 149 articles
+21:26:55 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+21:26:56 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+21:26:57 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+21:26:58 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+21:26:59 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+21:26:59 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+21:26:59 [INFO] asn_scheduler: [Bidding] 42 articles
+21:26:59 [INFO] asn_scheduler: Total: 191 unique articles
+21:26:59 [INFO] asn_ai: Title filter skipped 2 articles
+21:27:00 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+21:27:24 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+21:28:08 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+21:29:08 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+21:30:32 [ERROR] asn_ai: AI processing error: 'int' object has no attribute 'startswith'
+21:30:33 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+21:30:54 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+21:31:32 [ERROR] asn_ai: AI processing error: 'int' object has no attribute 'startswith'
+21:31:33 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+21:31:49 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+21:32:12 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+21:32:41 [INFO] asn_main: ASN starting...
+21:32:41 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+21:32:41 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+21:32:41 [INFO] apscheduler.scheduler: Scheduler started
+21:32:41 [INFO] asn_scheduler: Scheduler started: every 120 min
+21:32:41 [INFO] asn_scheduler: Scheduler stopped
+21:32:41 [INFO] asn_main: ASN stopped
+21:32:41 [INFO] apscheduler.scheduler: Scheduler has been shut down
+21:33:18 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+21:34:24 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+21:35:09 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+21:35:32 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+21:36:21 [INFO] asn_ai: AI: 103/191 articles passed filter
+21:36:21 [INFO] asn_storage: Merge: 103 new, 0 updated
+21:36:21 [INFO] asn_storage: Cleaned 31 old stories (>10d)
+21:36:21 [INFO] asn_scheduler: === Update done: 72 stories ===
+23:26:18 [INFO] apscheduler.executors.default: Running job "ASN定时更新 (trigger: interval[2:00:00], next run at: 2026-08-09 01:26:18 CST)" (scheduled at 2026-08-08 23:26:18.463353+08:00)
+23:26:18 [INFO] asn_scheduler: === Update cycle start ===
+23:26:18 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+23:26:19 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+23:26:20 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+23:26:24 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+23:26:25 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+23:26:26 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+23:26:29 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+23:26:31 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+23:26:34 [INFO] httpx: HTTP Request: GET https://satnews.com/feed/ "HTTP/1.1 403 Forbidden"
+23:26:35 [ERROR] asn_fetchers.asn_rss: RSS [SatNews]: Client error '403 Forbidden' for url 'https://satnews.com/feed/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+23:26:37 [INFO] httpx: HTTP Request: GET https://warwingsdaily.com/feed/ "HTTP/1.1 200 OK"
+23:26:39 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+23:26:41 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+23:26:53 [INFO] httpx: HTTP Request: GET https://www.aero-news.net/news/rssfeed.xml "HTTP/1.1 200 OK"
+23:26:56 [INFO] httpx: HTTP Request: GET https://theaviationist.com/feed/ "HTTP/1.1 200 OK"
+23:26:56 [INFO] asn_fetchers.asn_rss: RSS: 149 articles total
+23:26:56 [INFO] asn_scheduler: [RSS] 149 articles
+23:27:01 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+23:27:01 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+23:27:02 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+23:27:03 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+23:27:05 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+23:27:05 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+23:27:05 [INFO] asn_scheduler: [Bidding] 42 articles
+23:27:05 [INFO] asn_scheduler: Total: 191 unique articles
+23:27:05 [INFO] asn_ai: Title filter skipped 2 articles
+23:27:05 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+23:27:48 [ERROR] asn_ai: AI processing error: 'int' object has no attribute 'startswith'
+23:27:50 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+23:28:24 [ERROR] asn_ai: AI processing error: 'int' object has no attribute 'startswith'
+23:29:02 [INFO] asn_main: ASN starting...
+23:29:02 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+23:29:02 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+23:29:02 [INFO] apscheduler.scheduler: Scheduler started
+23:29:02 [INFO] asn_scheduler: Scheduler started: every 120 min
+23:48:34 [INFO] asn_main: ASN starting...
+23:48:34 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+23:48:34 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+23:48:34 [INFO] apscheduler.scheduler: Scheduler started
+23:48:34 [INFO] asn_scheduler: Scheduler started: every 120 min
+00:07:47 [INFO] asn_main: ASN starting...
+00:07:47 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+00:07:47 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+00:07:47 [INFO] apscheduler.scheduler: Scheduler started
+00:07:47 [INFO] asn_scheduler: Scheduler started: every 120 min
+00:07:47 [INFO] asn_scheduler: Scheduler stopped
+00:07:47 [INFO] asn_main: ASN stopped
+00:07:47 [INFO] apscheduler.scheduler: Scheduler has been shut down
+00:09:11 [INFO] asn_main: ASN starting...
+00:09:11 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+00:09:11 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+00:09:11 [INFO] apscheduler.scheduler: Scheduler started
+00:09:11 [INFO] asn_scheduler: Scheduler started: every 120 min
+00:09:41 [INFO] asn_token_tracker: Token usage tracker reset
+00:09:41 [INFO] asn_main: Logout complete: all data cleared
+00:13:13 [INFO] asn_main: ASN starting...
+00:13:13 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+00:13:13 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+00:13:13 [INFO] apscheduler.scheduler: Scheduler started
+00:13:13 [INFO] asn_scheduler: Scheduler started: every 120 min
+00:17:03 [INFO] asn_main: ASN starting...
+00:17:03 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+00:17:03 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+00:17:03 [INFO] apscheduler.scheduler: Scheduler started
+00:17:03 [INFO] asn_scheduler: Scheduler started: every 120 min
+00:17:03 [INFO] asn_scheduler: Scheduler stopped
+00:17:03 [INFO] asn_main: ASN stopped
+00:17:03 [INFO] apscheduler.scheduler: Scheduler has been shut down
+00:19:06 [INFO] asn_main: ASN starting...
+00:19:06 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+00:19:06 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+00:19:06 [INFO] apscheduler.scheduler: Scheduler started
+00:19:06 [INFO] asn_scheduler: Scheduler started: every 120 min
+00:20:28 [INFO] asn_main: ASN starting...
+00:20:28 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+00:20:28 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+00:20:28 [INFO] apscheduler.scheduler: Scheduler started
+00:20:28 [INFO] asn_scheduler: Scheduler started: every 120 min
+00:20:28 [INFO] asn_scheduler: Scheduler stopped
+00:20:28 [INFO] asn_main: ASN stopped
+00:20:28 [INFO] apscheduler.scheduler: Scheduler has been shut down
+00:20:51 [INFO] asn_main: ASN starting...
+00:20:51 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+00:20:51 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+00:20:51 [INFO] apscheduler.scheduler: Scheduler started
+00:20:51 [INFO] asn_scheduler: Scheduler started: every 120 min
+00:20:51 [INFO] asn_scheduler: Scheduler stopped
+00:20:51 [INFO] asn_main: ASN stopped
+00:20:51 [INFO] apscheduler.scheduler: Scheduler has been shut down
+00:22:59 [INFO] asn_main: ASN starting...
+00:22:59 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+00:22:59 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+00:22:59 [INFO] apscheduler.scheduler: Scheduler started
+00:22:59 [INFO] asn_scheduler: Scheduler started: every 120 min
+00:22:59 [INFO] asn_scheduler: Scheduler stopped
+00:22:59 [INFO] asn_main: ASN stopped
+00:22:59 [INFO] apscheduler.scheduler: Scheduler has been shut down
+00:29:22 [INFO] asn_main: ASN starting...
+00:29:22 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+00:29:22 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+00:29:22 [INFO] apscheduler.scheduler: Scheduler started
+00:29:22 [INFO] asn_scheduler: Scheduler started: every 120 min
+00:29:22 [INFO] asn_scheduler: Scheduler stopped
+00:29:22 [INFO] asn_main: ASN stopped
+00:29:22 [INFO] apscheduler.scheduler: Scheduler has been shut down
+00:34:13 [INFO] asn_main: ASN starting...
+00:34:13 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+00:34:13 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+00:34:13 [INFO] apscheduler.scheduler: Scheduler started
+00:34:13 [INFO] asn_scheduler: Scheduler started: every 120 min
+00:34:13 [INFO] asn_scheduler: Scheduler stopped
+00:34:13 [INFO] asn_main: ASN stopped
+00:34:13 [INFO] apscheduler.scheduler: Scheduler has been shut down
+00:34:39 [INFO] asn_scheduler: === Update cycle start ===
+00:34:41 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+00:34:41 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+00:34:42 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+00:34:42 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+00:34:42 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+00:34:42 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+00:34:43 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+00:34:43 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+00:34:44 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+00:34:46 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+00:34:48 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+00:34:49 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+00:34:52 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+00:34:53 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+00:34:54 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+00:34:55 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+00:34:58 [INFO] asn_fetchers.asn_rss: RSS: 109 articles total
+00:34:58 [INFO] asn_scheduler: [RSS] 109 articles
+00:34:58 [INFO] asn_scheduler: [Bidding] 42 articles
+00:34:58 [INFO] asn_scheduler: Total: 151 unique articles
+00:34:58 [INFO] asn_ai: Title filter skipped 5 articles
+00:34:59 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+00:35:29 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+00:36:05 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+00:36:52 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+00:37:39 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+00:38:14 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+00:38:53 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+00:39:16 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+00:39:49 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+00:41:11 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+00:41:34 [INFO] asn_ai: AI: 108/151 articles passed filter, tokens: 19643in/50010out
+00:41:34 [INFO] asn_storage: Merge: 108 new, 0 updated
+00:41:34 [INFO] asn_storage: Cleaned 38 old stories (>10d)
+00:41:34 [INFO] asn_token_tracker: Token usage recorded: 19643+50010=69653 tokens, ¥0.2197
+00:41:34 [INFO] asn_scheduler: === Update done: 70 stories ===
+00:50:00 [INFO] asn_token_tracker: Token usage tracker reset
+00:50:00 [INFO] asn_main: Logout complete: all data cleared
+01:15:06 [INFO] asn_scheduler: === Update cycle start ===
+01:15:07 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+01:15:08 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+01:15:08 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+01:15:08 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+01:15:08 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+01:15:09 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+01:15:09 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+01:15:09 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+01:15:09 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+01:15:16 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+01:15:16 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+01:15:18 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+01:15:22 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+01:15:25 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+01:15:26 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+01:15:27 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+01:15:28 [INFO] asn_fetchers.asn_rss: RSS: 109 articles total
+01:15:28 [INFO] asn_scheduler: [RSS] 109 articles
+01:15:28 [INFO] asn_scheduler: [Bidding] 42 articles
+01:15:28 [INFO] asn_scheduler: Total: 151 unique articles
+01:15:28 [INFO] asn_ai: Title filter skipped 5 articles
+01:15:28 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+01:15:54 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+01:16:21 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+01:17:06 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+01:17:39 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+01:18:21 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+01:19:42 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+01:20:04 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+01:20:29 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+01:20:58 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+01:21:10 [INFO] asn_ai: AI: 104/151 articles passed filter, tokens: 19643in/42878out
+01:21:10 [INFO] asn_storage: Merge: 104 new, 0 updated
+01:21:10 [INFO] asn_storage: Cleaned 33 old stories (>10d)
+01:21:10 [INFO] asn_token_tracker: Token usage recorded: 19643+42878=62521 tokens, ¥0.1912
+01:21:10 [INFO] asn_scheduler: === Update done: 71 stories ===
+01:28:29 [INFO] asn_main: ASN starting...
+01:28:29 [INFO] asn_token_tracker: Token usage restored: 1 records, 62521 total tokens
+01:28:29 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+01:28:29 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+01:28:29 [INFO] apscheduler.scheduler: Scheduler started
+01:28:29 [INFO] asn_scheduler: Scheduler started: every 120 min
+01:28:29 [INFO] asn_scheduler: Scheduler stopped
+01:28:29 [INFO] asn_main: ASN stopped
+01:28:29 [INFO] apscheduler.scheduler: Scheduler has been shut down
+02:12:37 [INFO] asn_main: ASN starting...
+02:12:37 [INFO] asn_token_tracker: Token usage restored: 1 records, 62521 total tokens
+02:12:37 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+02:12:37 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+02:12:37 [INFO] apscheduler.scheduler: Scheduler started
+02:12:37 [INFO] asn_scheduler: Scheduler started: every 120 min
+02:12:37 [INFO] asn_scheduler: Scheduler stopped
+02:12:37 [INFO] asn_main: ASN stopped
+02:12:37 [INFO] apscheduler.scheduler: Scheduler has been shut down
+02:19:06 [INFO] apscheduler.executors.default: Running job "ASN定时更新 (trigger: interval[2:00:00], next run at: 2026-08-09 04:19:06 CST)" (scheduled at 2026-08-09 02:19:06.446876+08:00)
+02:19:06 [INFO] asn_scheduler: === Update cycle start ===
+02:19:07 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+02:19:07 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+02:19:07 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+02:19:07 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+02:19:08 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+02:19:08 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+02:19:08 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+02:19:09 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+02:19:09 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+02:19:11 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+02:19:12 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+02:19:13 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+02:19:15 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+02:19:16 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+02:19:16 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+02:19:18 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+02:19:20 [INFO] asn_fetchers.asn_rss: RSS: 109 articles total
+02:19:20 [INFO] asn_scheduler: [RSS] 109 articles
+02:19:20 [INFO] asn_scheduler: [Bidding] 42 articles
+02:19:20 [INFO] asn_scheduler: Total: 151 unique articles
+02:19:20 [INFO] asn_ai: Title filter skipped 5 articles
+02:19:20 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+02:19:57 [INFO] asn_main: ASN starting...
+02:19:57 [INFO] asn_token_tracker: Token usage restored: 1 records, 62521 total tokens
+02:19:57 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+02:19:57 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+02:19:57 [INFO] apscheduler.scheduler: Scheduler started
+02:19:57 [INFO] asn_scheduler: Scheduler started: every 120 min
+02:19:57 [INFO] asn_scheduler: Scheduler stopped
+02:19:57 [INFO] asn_main: ASN stopped
+02:19:57 [INFO] apscheduler.scheduler: Scheduler has been shut down
+02:20:03 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+02:20:56 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+02:21:38 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+02:22:25 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+02:23:18 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+02:24:13 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+02:24:38 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+02:24:42 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+02:25:13 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+02:25:45 [INFO] asn_ai: AI: 93/151 articles passed filter, tokens: 23446in/45057out
+02:25:45 [INFO] asn_storage: Merge: 93 new, 0 updated
+02:25:45 [INFO] asn_storage: Cleaned 28 old stories (>10d)
+02:25:45 [INFO] asn_token_tracker: Token usage recorded: 23446+45057=68503 tokens, ¥0.2037
+02:25:45 [INFO] asn_scheduler: === Update done: 136 stories ===
+02:25:45 [INFO] apscheduler.executors.default: Job "ASN定时更新 (trigger: interval[2:00:00], next run at: 2026-08-09 04:19:06 CST)" executed successfully
+02:27:51 [INFO] asn_main: ASN starting...
+02:27:51 [INFO] asn_token_tracker: Token usage restored: 2 records, 131024 total tokens
+02:27:51 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+02:27:51 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+02:27:51 [INFO] apscheduler.scheduler: Scheduler started
+02:27:51 [INFO] asn_scheduler: Scheduler started: every 120 min
+02:27:51 [INFO] asn_scheduler: Scheduler stopped
+02:27:51 [INFO] asn_main: ASN stopped
+02:27:51 [INFO] apscheduler.scheduler: Scheduler has been shut down
+02:36:46 [INFO] asn_main: ASN starting...
+02:36:46 [INFO] asn_token_tracker: Token usage restored: 2 records, 131024 total tokens
+02:36:46 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+02:36:46 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+02:36:46 [INFO] apscheduler.scheduler: Scheduler started
+02:36:46 [INFO] asn_scheduler: Scheduler started: every 120 min
+02:36:46 [INFO] asn_scheduler: Scheduler stopped
+02:36:46 [INFO] asn_main: ASN stopped
+02:36:46 [INFO] apscheduler.scheduler: Scheduler has been shut down
+02:39:37 [INFO] asn_scheduler: === Update cycle start ===
+02:39:38 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+02:39:39 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+02:39:39 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+02:39:39 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+02:39:39 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+02:39:40 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+02:39:40 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+02:39:40 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+02:40:09 [ERROR] asn_fetchers.asn_rss: RSS [Space.com]: 
+02:40:10 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+02:40:11 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+02:40:16 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+02:40:18 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+02:40:19 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+02:40:20 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+02:40:21 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+02:40:22 [INFO] asn_fetchers.asn_rss: RSS: 89 articles total
+02:40:22 [INFO] asn_scheduler: [RSS] 89 articles
+02:40:22 [INFO] asn_scheduler: [Bidding] 42 articles
+02:40:22 [INFO] asn_scheduler: Total: 131 unique articles
+02:40:22 [INFO] asn_ai: Title filter skipped 4 articles
+02:40:23 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+02:40:54 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+02:42:03 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+02:42:37 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+02:43:38 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+02:44:19 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+02:44:34 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+02:45:07 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+02:45:32 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+02:45:46 [INFO] asn_ai: AI: 91/131 articles passed filter, tokens: 20328in/39636out
+02:45:46 [INFO] asn_storage: Merge: 91 new, 0 updated
+02:45:46 [INFO] asn_storage: Cleaned 34 old stories (>10d)
+02:45:46 [INFO] asn_token_tracker: Token usage recorded: 20328+39636=59964 tokens, ¥0.1789
+02:45:46 [INFO] asn_scheduler: === Update done: 193 stories ===
+02:47:08 [INFO] asn_main: ASN starting...
+02:47:08 [INFO] asn_token_tracker: Token usage restored: 3 records, 190988 total tokens
+02:47:08 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+02:47:08 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+02:47:08 [INFO] apscheduler.scheduler: Scheduler started
+02:47:08 [INFO] asn_scheduler: Scheduler started: every 120 min
+02:47:08 [INFO] asn_scheduler: Scheduler stopped
+02:47:08 [INFO] asn_main: ASN stopped
+02:47:08 [INFO] apscheduler.scheduler: Scheduler has been shut down
+03:11:44 [INFO] asn_main: ASN starting...
+03:11:44 [INFO] asn_token_tracker: Token usage restored: 3 records, 190988 total tokens
+03:11:44 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+03:11:44 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+03:11:44 [INFO] apscheduler.scheduler: Scheduler started
+03:11:44 [INFO] asn_scheduler: Scheduler started: every 120 min
+03:11:44 [INFO] asn_scheduler: Scheduler stopped
+03:11:44 [INFO] asn_main: ASN stopped
+03:11:44 [INFO] apscheduler.scheduler: Scheduler has been shut down
+03:28:24 [INFO] asn_main: ASN starting...
+03:28:24 [INFO] asn_token_tracker: Token usage restored: 3 records, 190988 total tokens
+03:28:24 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+03:28:24 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+03:28:24 [INFO] apscheduler.scheduler: Scheduler started
+03:28:24 [INFO] asn_scheduler: Scheduler started: every 120 min
+03:28:24 [INFO] asn_scheduler: Scheduler stopped
+03:28:24 [INFO] asn_main: ASN stopped
+03:28:24 [INFO] apscheduler.scheduler: Scheduler has been shut down
+03:28:45 [INFO] asn_scheduler: === Update cycle start ===
+03:28:46 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+03:28:46 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+03:28:46 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+03:28:46 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+03:28:47 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+03:28:47 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+03:28:48 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+03:28:48 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+03:29:03 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+03:29:07 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+03:29:07 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+03:29:08 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+03:29:10 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+03:29:11 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+03:29:12 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+03:29:13 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+03:29:13 [INFO] asn_fetchers.asn_rss: RSS: 109 articles total
+03:29:13 [INFO] asn_scheduler: [RSS] 109 articles
+03:29:13 [INFO] asn_scheduler: [Bidding] 42 articles
+03:29:13 [INFO] asn_scheduler: Total: 151 unique articles
+03:29:13 [INFO] asn_ai: Title filter skipped 5 articles
+03:29:14 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+03:30:07 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+03:31:17 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+03:32:15 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+03:32:59 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+03:33:40 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+03:34:51 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+03:35:39 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+03:35:43 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+03:36:08 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+03:36:35 [INFO] asn_ai: AI: 97/151 articles passed filter, tokens: 23431in/54300out
+03:36:35 [INFO] asn_storage: Merge: 92 new, 5 updated
+03:36:35 [INFO] asn_storage: Cleaned 27 old stories (>10d)
+03:36:35 [INFO] asn_token_tracker: Token usage recorded: 23431+54300=77731 tokens, ¥0.2406
+03:36:35 [INFO] asn_scheduler: === Update done: 258 stories ===
+03:55:24 [INFO] asn_main: ASN starting...
+03:55:24 [INFO] asn_token_tracker: Token usage restored: 4 records, 268719 total tokens
+03:55:25 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+03:55:25 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+03:55:25 [INFO] apscheduler.scheduler: Scheduler started
+03:55:25 [INFO] asn_scheduler: Scheduler started: every 120 min
+03:55:25 [INFO] asn_scheduler: Scheduler stopped
+03:55:25 [INFO] asn_main: ASN stopped
+03:55:25 [INFO] apscheduler.scheduler: Scheduler has been shut down
+03:55:40 [INFO] asn_main: ASN starting...
+03:55:40 [INFO] asn_token_tracker: Token usage restored: 4 records, 268719 total tokens
+03:55:40 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+03:55:40 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+03:55:40 [INFO] apscheduler.scheduler: Scheduler started
+03:55:40 [INFO] asn_scheduler: Scheduler started: every 120 min
+03:55:40 [INFO] asn_scheduler: Scheduler stopped
+03:55:40 [INFO] asn_main: ASN stopped
+03:55:40 [INFO] apscheduler.scheduler: Scheduler has been shut down
+09:53:13 [INFO] asn_main: ASN starting...
+09:53:13 [INFO] asn_token_tracker: Token usage restored: 4 records, 268719 total tokens
+09:53:13 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+09:53:13 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+09:53:13 [INFO] apscheduler.scheduler: Scheduler started
+09:53:13 [INFO] asn_scheduler: Scheduler started: every 120 min
+09:55:18 [INFO] asn_scheduler: === Update cycle start ===
+09:55:27 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+09:55:28 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+09:55:28 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+09:55:28 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+09:55:29 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+09:55:29 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+09:55:29 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+09:55:30 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+09:55:30 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+09:55:46 [ERROR] asn_fetchers.asn_rss: RSS [Spaceflight Now]: Server disconnected without sending a response.
+09:55:46 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+09:55:49 [INFO] httpx: HTTP Request: GET https://arstechnica.com/space/feed/ "HTTP/1.1 200 OK"
+09:55:55 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+09:55:57 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+09:55:58 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+09:55:58 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+09:55:59 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+09:56:00 [INFO] asn_fetchers.asn_rss: RSS: 119 articles total
+09:56:00 [INFO] asn_scheduler: [RSS] 119 articles
+09:56:00 [INFO] asn_scheduler: [Bidding] 42 articles
+09:56:00 [INFO] asn_scheduler: Total: 161 unique articles
+09:56:00 [INFO] asn_ai: Title filter skipped 12 articles
+09:56:01 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+09:57:00 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+09:57:50 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+09:58:14 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+09:59:18 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+10:00:27 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+10:01:38 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+10:02:05 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+10:02:10 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+10:02:24 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+10:02:33 [INFO] asn_ai: AI: 80/161 articles passed filter, tokens: 24772in/44075out
+10:02:33 [INFO] asn_storage: Merge: 80 new, 0 updated
+10:02:33 [INFO] asn_storage: Cleaned 22 old stories (>10d)
+10:02:33 [INFO] asn_token_tracker: Token usage recorded: 24772+44075=68847 tokens, ¥0.2011, 435.1s, 316 stories
+10:02:33 [INFO] asn_scheduler: === Update done: 316 stories (58 new) in 435.1s ===
+10:25:51 [INFO] asn_main: ASN starting...
+10:25:51 [INFO] asn_token_tracker: Token usage restored: 5 records, 337566 total tokens
+10:25:51 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+10:25:51 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+10:25:51 [INFO] apscheduler.scheduler: Scheduler started
+10:25:51 [INFO] asn_scheduler: Scheduler started: every 120 min
+10:25:51 [INFO] asn_scheduler: Scheduler stopped
+10:25:51 [INFO] asn_main: ASN stopped
+10:25:51 [INFO] apscheduler.scheduler: Scheduler has been shut down
+10:35:33 [INFO] asn_main: ASN starting...
+10:35:33 [INFO] asn_token_tracker: Token usage restored: 5 records, 337566 total tokens
+10:35:33 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+10:35:33 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+10:35:33 [INFO] apscheduler.scheduler: Scheduler started
+10:35:33 [INFO] asn_scheduler: Scheduler started: every 120 min
+10:35:33 [INFO] asn_scheduler: Scheduler stopped
+10:35:33 [INFO] asn_main: ASN stopped
+10:35:33 [INFO] apscheduler.scheduler: Scheduler has been shut down
+10:35:55 [INFO] asn_scheduler: Scheduler interval updated to 240 min
+10:36:02 [INFO] asn_scheduler: === Update cycle start ===
+10:36:04 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+10:36:04 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+10:36:05 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+10:36:05 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+10:36:06 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+10:36:06 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+10:36:06 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+10:36:07 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+10:36:07 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+10:36:09 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+10:36:09 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+10:36:14 [INFO] httpx: HTTP Request: GET https://arstechnica.com/space/feed/ "HTTP/1.1 200 OK"
+10:36:18 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+10:36:20 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+10:36:22 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+10:36:45 [ERROR] asn_fetchers.asn_rss: RSS [DefenseScoop]: 
+10:36:46 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+10:36:47 [INFO] asn_fetchers.asn_rss: RSS: 119 articles total
+10:36:47 [INFO] asn_scheduler: [RSS] 119 articles
+10:36:47 [INFO] asn_scheduler: [Bidding] 42 articles
+10:36:47 [INFO] asn_scheduler: Total: 161 unique articles
+10:36:47 [INFO] asn_ai: Title filter skipped 12 articles
+10:36:48 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+10:37:36 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+10:38:25 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+10:39:13 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+10:40:05 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+10:42:05 [ERROR] asn_ai: DeepSeek API error: 
+10:42:07 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+10:43:13 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+10:44:08 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+10:44:35 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+10:44:43 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+10:44:51 [INFO] asn_ai: AI: 75/161 articles passed filter, tokens: 22588in/44781out
+10:44:51 [INFO] asn_storage: Merge: 75 new, 0 updated
+10:44:51 [INFO] asn_storage: Cleaned 18 old stories (>10d)
+10:44:51 [INFO] asn_token_tracker: Token usage recorded: 22588+44781=67369 tokens, ¥0.2017, 529.2s, 373 stories
+10:44:51 [INFO] asn_scheduler: === Update done: 373 stories (57 new) in 529.2s ===
+11:00:10 [INFO] asn_main: ASN starting...
+11:00:10 [INFO] asn_token_tracker: Token usage restored: 6 records, 404935 total tokens
+11:00:11 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+11:00:11 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+11:00:11 [INFO] apscheduler.scheduler: Scheduler started
+11:00:11 [INFO] asn_scheduler: Scheduler started: every 240 min
+11:00:11 [INFO] asn_scheduler: Scheduler stopped
+11:00:11 [INFO] asn_main: ASN stopped
+11:00:11 [INFO] apscheduler.scheduler: Scheduler has been shut down
+11:00:37 [INFO] asn_main: ASN starting...
+11:00:37 [INFO] asn_token_tracker: Token usage restored: 6 records, 404935 total tokens
+11:00:37 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+11:00:37 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+11:00:37 [INFO] apscheduler.scheduler: Scheduler started
+11:00:37 [INFO] asn_scheduler: Scheduler started: every 240 min
+11:00:37 [INFO] asn_scheduler: Scheduler stopped
+11:00:37 [INFO] asn_main: ASN stopped
+11:00:37 [INFO] apscheduler.scheduler: Scheduler has been shut down
+11:01:36 [INFO] asn_main: ASN starting...
+11:01:36 [INFO] asn_token_tracker: Token usage restored: 6 records, 404935 total tokens
+11:01:36 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+11:01:36 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+11:01:36 [INFO] apscheduler.scheduler: Scheduler started
+11:01:36 [INFO] asn_scheduler: Scheduler started: every 240 min
+11:07:21 [INFO] asn_main: ASN starting...
+11:07:21 [INFO] asn_token_tracker: Token usage restored: 6 records, 404935 total tokens
+11:07:21 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+11:07:21 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+11:07:21 [INFO] apscheduler.scheduler: Scheduler started
+11:07:21 [INFO] asn_scheduler: Scheduler started: every 240 min
+11:08:01 [INFO] asn_scheduler: === Update cycle start ===
+11:08:01 [INFO] asn_scheduler: Fetching articles published after 2026-08-08 19:19:16
+11:08:03 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+11:08:04 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+11:08:04 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+11:08:04 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+11:08:04 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+11:08:05 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+11:08:05 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+11:08:05 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+11:08:05 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+11:08:07 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+11:08:07 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+11:08:10 [INFO] httpx: HTTP Request: GET https://arstechnica.com/space/feed/ "HTTP/1.1 200 OK"
+11:08:12 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+11:08:15 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+11:08:16 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+11:08:17 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+11:08:18 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+11:08:18 [INFO] asn_fetchers.asn_rss: RSS: 129 articles total
+11:08:18 [INFO] asn_scheduler: [RSS] filtered 129 old articles (before 2026-08-08 19:19:16)
+11:08:18 [INFO] asn_scheduler: [RSS] 0 articles
+11:08:18 [INFO] asn_scheduler: [Bidding] filtered 42 old articles (before 2026-08-08 19:19:16)
+11:08:18 [INFO] asn_scheduler: [Bidding] 0 articles
+11:08:18 [INFO] asn_scheduler: Total: 0 unique articles
+11:08:18 [INFO] asn_scheduler: No articles fetched
+11:13:28 [INFO] asn_main: ASN starting...
+11:13:28 [INFO] asn_token_tracker: Token usage restored: 6 records, 404935 total tokens
+11:13:29 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+11:13:29 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+11:13:29 [INFO] apscheduler.scheduler: Scheduler started
+11:13:29 [INFO] asn_scheduler: Scheduler started: every 240 min
+11:13:29 [INFO] asn_scheduler: Scheduler stopped
+11:13:29 [INFO] asn_main: ASN stopped
+11:13:29 [INFO] apscheduler.scheduler: Scheduler has been shut down
+11:21:01 [INFO] asn_main: ASN starting...
+11:21:01 [INFO] asn_token_tracker: Token usage restored: 6 records, 404935 total tokens
+11:21:01 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+11:21:01 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+11:21:01 [INFO] apscheduler.scheduler: Scheduler started
+11:21:01 [INFO] asn_scheduler: Scheduler started: every 240 min
+11:26:04 [INFO] asn_scheduler: First update of the day: checking latest DeepSeek pricing
+11:26:04 [INFO] asn_token_tracker: Pricing updated (auto): input=¥1.0/M, output=¥2.0/M
+11:26:04 [INFO] asn_scheduler: === Update cycle start ===
+11:26:04 [INFO] asn_scheduler: Fetching articles published after 2026-08-08 19:19:16
+11:26:06 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+11:26:06 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+11:26:06 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+11:26:06 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+11:26:07 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+11:26:07 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+11:26:07 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+11:26:08 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+11:26:08 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+11:26:10 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+11:26:10 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+11:26:12 [INFO] httpx: HTTP Request: GET https://arstechnica.com/space/feed/ "HTTP/1.1 200 OK"
+11:26:14 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+11:26:16 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+11:26:17 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+11:26:18 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+11:26:19 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+11:26:20 [INFO] asn_fetchers.asn_rss: RSS: 129 articles total
+11:26:20 [INFO] asn_scheduler: [RSS] filtered 129 old articles (before 2026-08-08 19:19:16)
+11:26:20 [INFO] asn_scheduler: [RSS] 0 articles
+11:26:20 [INFO] asn_scheduler: [Bidding] filtered 42 old articles (before 2026-08-08 19:19:16)
+11:26:20 [INFO] asn_scheduler: [Bidding] 0 articles
+11:26:20 [INFO] asn_scheduler: Total: 0 unique articles
+11:26:20 [INFO] asn_scheduler: No articles fetched
+11:28:23 [INFO] asn_main: ASN starting...
+11:28:24 [INFO] asn_token_tracker: Token usage restored: 6 records, 404935 total tokens
+11:28:24 [INFO] asn_token_tracker: Pricing loaded: input=¥1.0/M, output=¥2.0/M, last=2026-08-09
+11:28:24 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+11:28:24 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+11:28:24 [INFO] apscheduler.scheduler: Scheduler started
+11:28:24 [INFO] asn_scheduler: Scheduler started: every 240 min
+11:29:37 [INFO] asn_scheduler: === Update cycle start ===
+11:29:37 [INFO] asn_scheduler: Fetching articles published after 2026-08-08 19:19:16
+11:29:38 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+11:29:38 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+11:29:38 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+11:29:39 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+11:29:39 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+11:29:39 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+11:29:42 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+11:29:42 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+11:29:43 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+11:29:46 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+11:29:46 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+11:29:48 [INFO] httpx: HTTP Request: GET https://arstechnica.com/space/feed/ "HTTP/1.1 200 OK"
+11:29:50 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+11:29:52 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+11:29:53 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+11:29:55 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+11:29:55 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+11:29:56 [INFO] asn_fetchers.asn_rss: RSS: 129 articles total
+11:29:56 [INFO] asn_scheduler: [RSS] filtered 129 old articles (before 2026-08-08 19:19:16)
+11:29:56 [INFO] asn_scheduler: [RSS] 0 articles
+11:29:56 [INFO] asn_scheduler: [Bidding] filtered 42 old articles (before 2026-08-08 19:19:16)
+11:29:56 [INFO] asn_scheduler: [Bidding] 0 articles
+11:29:56 [INFO] asn_scheduler: Total: 0 unique articles
+11:29:56 [INFO] asn_scheduler: No articles fetched
+11:37:51 [INFO] asn_main: ASN starting...
+11:37:51 [INFO] asn_token_tracker: Token usage restored: 6 records, 404935 total tokens
+11:37:51 [INFO] asn_token_tracker: Pricing loaded: input=¥1.0/M, output=¥2.0/M, last=2026-08-09
+11:37:51 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+11:37:51 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+11:37:51 [INFO] apscheduler.scheduler: Scheduler started
+11:37:51 [INFO] asn_scheduler: Scheduler started: every 240 min
+11:38:06 [INFO] asn_storage: Dedup: removed 292 duplicate stories
+11:38:06 [INFO] asn_main: Force dedup: 373 -> 81 (292 removed)
+11:38:11 [INFO] asn_main: Force dedup: 81 -> 81 (0 removed)
+11:39:01 [INFO] asn_main: ASN starting...
+11:39:01 [INFO] asn_token_tracker: Token usage restored: 6 records, 404935 total tokens
+11:39:01 [INFO] asn_token_tracker: Pricing loaded: input=¥1.0/M, output=¥2.0/M, last=2026-08-09
+11:39:01 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+11:39:01 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+11:39:01 [INFO] apscheduler.scheduler: Scheduler started
+11:39:01 [INFO] asn_scheduler: Scheduler started: every 240 min
+11:39:25 [INFO] asn_main: ASN starting...
+11:39:25 [INFO] asn_token_tracker: Token usage restored: 6 records, 404935 total tokens
+11:39:25 [INFO] asn_token_tracker: Pricing loaded: input=¥1.0/M, output=¥2.0/M, last=2026-08-09
+11:39:25 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+11:39:25 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+11:39:25 [INFO] apscheduler.scheduler: Scheduler started
+11:39:25 [INFO] asn_scheduler: Scheduler started: every 240 min
+11:39:25 [INFO] asn_scheduler: Scheduler stopped
+11:39:25 [INFO] asn_main: ASN stopped
+11:39:25 [INFO] apscheduler.scheduler: Scheduler has been shut down
+11:39:36 [INFO] asn_main: Force dedup: 81 -> 81 (0 removed)
+11:47:01 [INFO] asn_scheduler: === Update cycle start ===
+11:47:01 [INFO] asn_scheduler: Fetching articles published after 2026-08-08 19:19:16
+11:47:03 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+11:47:03 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+11:47:05 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+11:47:08 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+11:47:08 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+11:47:10 [INFO] httpx: HTTP Request: GET https://arstechnica.com/space/feed/ "HTTP/1.1 200 OK"
+11:47:12 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+11:47:14 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+11:47:17 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+11:47:18 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+11:47:24 [ERROR] asn_fetchers.asn_bidding: CEB search '航天': 
+11:47:25 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+11:47:25 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+11:47:25 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+11:47:26 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+11:47:26 [INFO] asn_fetchers.asn_bidding: Bidding: 37 unique articles
+11:47:40 [ERROR] asn_fetchers.asn_rss: RSS [Air & Space Forces]: 
+11:47:40 [INFO] asn_fetchers.asn_rss: RSS: 120 articles total
+11:47:40 [INFO] asn_scheduler: [RSS] filtered 120 old articles (before 2026-08-08 19:19:16)
+11:47:40 [INFO] asn_scheduler: [RSS] 0 articles
+11:47:40 [INFO] asn_scheduler: [Bidding] filtered 37 old articles (before 2026-08-08 19:19:16)
+11:47:40 [INFO] asn_scheduler: [Bidding] 0 articles
+11:47:40 [INFO] asn_scheduler: Total: 0 unique articles
+11:47:40 [INFO] asn_scheduler: No articles fetched
+11:53:03 [INFO] asn_scheduler: Scheduler interval updated to 30 min
+11:53:19 [INFO] asn_scheduler: Scheduler interval updated to 240 min
+11:54:10 [INFO] asn_main: ASN starting...
+11:54:10 [INFO] asn_token_tracker: Token usage restored: 6 records, 404935 total tokens
+11:54:10 [INFO] asn_token_tracker: Pricing loaded: input=¥1.0/M, output=¥2.0/M, last=2026-08-09
+11:54:10 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+11:54:10 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+11:54:10 [INFO] apscheduler.scheduler: Scheduler started
+11:54:10 [INFO] asn_scheduler: Scheduler started: every 240 min
+11:54:38 [INFO] asn_main: Re-filter: filtered out 6 stories by title rules
+11:54:38 [INFO] asn_main: Force dedup: 81 -> 75 (filtered=6, merged=0)
+11:55:33 [INFO] asn_main: ASN starting...
+11:55:33 [INFO] asn_token_tracker: Token usage restored: 6 records, 404935 total tokens
+11:55:33 [INFO] asn_token_tracker: Pricing loaded: input=¥1.0/M, output=¥2.0/M, last=2026-08-09
+11:55:33 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+11:55:33 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+11:55:33 [INFO] apscheduler.scheduler: Scheduler started
+11:55:33 [INFO] asn_scheduler: Scheduler started: every 240 min
+11:55:33 [INFO] asn_scheduler: Scheduler stopped
+11:55:33 [INFO] asn_main: ASN stopped
+11:55:33 [INFO] apscheduler.scheduler: Scheduler has been shut down
+11:55:45 [INFO] asn_main: Re-filter: filtered out 0 stories by title rules
+11:55:45 [INFO] asn_main: Force dedup: 75 -> 75 (filtered=0, merged=0)
+11:56:20 [INFO] asn_main: ASN starting...
+11:56:20 [INFO] asn_token_tracker: Token usage restored: 6 records, 404935 total tokens
+11:56:20 [INFO] asn_token_tracker: Pricing loaded: input=¥1.0/M, output=¥2.0/M, last=2026-08-09
+11:56:20 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+11:56:20 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+11:56:20 [INFO] apscheduler.scheduler: Scheduler started
+11:56:20 [INFO] asn_scheduler: Scheduler started: every 240 min
+11:56:27 [INFO] asn_main: Re-filter: filtered out 0 stories by title rules
+11:56:27 [INFO] asn_storage: Dedup: removed 1 duplicate stories
+11:56:27 [INFO] asn_main: Force dedup: 75 -> 74 (filtered=0, merged=1)
+11:57:18 [INFO] asn_main: ASN starting...
+11:57:18 [INFO] asn_token_tracker: Token usage restored: 6 records, 404935 total tokens
+11:57:18 [INFO] asn_token_tracker: Pricing loaded: input=¥1.0/M, output=¥2.0/M, last=2026-08-09
+11:57:18 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+11:57:18 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+11:57:18 [INFO] apscheduler.scheduler: Scheduler started
+11:57:18 [INFO] asn_scheduler: Scheduler started: every 240 min
+11:57:18 [INFO] asn_scheduler: Scheduler stopped
+11:57:18 [INFO] asn_main: ASN stopped
+11:57:18 [INFO] apscheduler.scheduler: Scheduler has been shut down
+11:57:25 [INFO] asn_main: Re-filter: filtered out 0 stories by title rules
+11:57:25 [INFO] asn_main: Force dedup: 74 -> 74 (filtered=0, merged=0)
+11:57:49 [INFO] asn_main: Re-filter: filtered out 0 stories by title rules
+11:57:49 [INFO] asn_main: Force dedup: 74 -> 74 (filtered=0, merged=0)
+11:58:33 [INFO] asn_main: ASN starting...
+11:58:33 [INFO] asn_token_tracker: Token usage restored: 6 records, 404935 total tokens
+11:58:33 [INFO] asn_token_tracker: Pricing loaded: input=¥1.0/M, output=¥2.0/M, last=2026-08-09
+11:58:33 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+11:58:33 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+11:58:33 [INFO] apscheduler.scheduler: Scheduler started
+11:58:33 [INFO] asn_scheduler: Scheduler started: every 240 min
+11:58:37 [INFO] asn_main: Re-filter: filtered out 1 stories by title rules
+11:58:37 [INFO] asn_main: Force dedup: 74 -> 73 (filtered=1, merged=0)
+12:04:31 [INFO] asn_main: ASN starting...
+12:04:31 [INFO] asn_token_tracker: Token usage restored: 6 records, 404935 total tokens
+12:04:31 [INFO] asn_token_tracker: Pricing loaded: input=¥1.0/M, output=¥2.0/M, last=2026-08-09
+12:04:31 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+12:04:31 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+12:04:31 [INFO] apscheduler.scheduler: Scheduler started
+12:04:31 [INFO] asn_scheduler: Scheduler started: every 240 min
+12:05:05 [INFO] asn_main: Re-filter: filtered out 0 stories by title rules
+12:05:05 [INFO] asn_ai: Translating 7 missing titles...
+12:05:20 [ERROR] asn_ai: Title translation batch failed: Server disconnected without sending a response.
+12:05:20 [INFO] asn_ai: Translated 0/7 titles, tokens: 0in/0out
+12:05:20 [INFO] asn_main: Force dedup: 73 -> 73 (filtered=0, merged=0)
+12:10:09 [INFO] asn_main: ASN starting...
+12:10:09 [INFO] asn_token_tracker: Token usage restored: 6 records, 404935 total tokens
+12:10:09 [INFO] asn_token_tracker: Pricing loaded: input=¥1.0/M, output=¥2.0/M, last=2026-08-09
+12:10:09 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+12:10:09 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+12:10:09 [INFO] apscheduler.scheduler: Scheduler started
+12:10:09 [INFO] asn_scheduler: Scheduler started: every 240 min
+12:10:24 [INFO] asn_main: Re-filter: filtered out 0 stories by title rules
+12:10:24 [INFO] asn_ai: Translating 7 missing titles...
+12:10:25 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+12:10:27 [INFO] asn_ai: Translation batch 1 succeeded: 328+207 tokens
+12:10:27 [INFO] asn_ai: Translated 7/7 titles (1 batches), tokens: 328in/207out
+12:10:27 [INFO] asn_token_tracker: Token usage recorded: 328+207=535 tokens, ¥0.0007, 0.0s, 73 stories
+12:10:27 [INFO] asn_main: Dedup translation cost recorded: 328+207 tokens
+12:10:27 [INFO] asn_main: Force dedup: 73 -> 73 (filtered=0, merged=0)
+12:10:32 [INFO] asn_main: Re-filter: filtered out 0 stories by title rules
+12:10:32 [INFO] asn_ai: No stories missing title_zh
+12:10:32 [INFO] asn_main: Force dedup: 73 -> 73 (filtered=0, merged=0)
+12:12:09 [INFO] asn_main: ASN starting...
+12:12:09 [INFO] asn_token_tracker: Token usage restored: 7 records, 405470 total tokens
+12:12:09 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+12:12:09 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+12:12:09 [INFO] apscheduler.scheduler: Scheduler started
+12:12:09 [INFO] asn_scheduler: Scheduler started: every 240 min
+12:13:02 [INFO] asn_main: ASN starting...
+12:13:02 [INFO] asn_token_tracker: Token usage restored: 7 records, 405470 total tokens
+12:13:02 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+12:13:02 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+12:13:02 [INFO] apscheduler.scheduler: Scheduler started
+12:13:02 [INFO] asn_scheduler: Scheduler started: every 240 min
+12:13:15 [INFO] asn_main: Re-filter: filtered out 0 stories by title rules
+12:13:15 [INFO] asn_ai: No stories missing title_zh
+12:13:15 [INFO] asn_main: Force dedup: 73 -> 73 (filtered=0, merged=0)
+12:23:55 [INFO] asn_main: ASN starting...
+12:23:55 [INFO] asn_token_tracker: Token usage restored: 7 records, 405470 total tokens
+12:23:55 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+12:23:55 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+12:23:55 [INFO] apscheduler.scheduler: Scheduler started
+12:23:55 [INFO] asn_scheduler: Scheduler started: every 240 min
+12:24:19 [INFO] asn_scheduler: First update of the day: checking latest DeepSeek pricing
+12:24:19 [INFO] asn_token_tracker: Pricing updated (auto): input=¥1.0/M, output=¥2.0/M
+12:24:19 [INFO] asn_scheduler: === Update cycle start ===
+12:24:19 [INFO] asn_scheduler: Fetching articles published after 2026-08-08 19:19:16
+12:24:20 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+12:24:20 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+12:24:20 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+12:24:20 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+12:24:21 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+12:24:21 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+12:24:21 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+12:24:22 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+12:24:22 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+12:24:23 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+12:24:45 [ERROR] asn_fetchers.asn_rss: RSS [The Verge Space]: 
+12:24:48 [INFO] httpx: HTTP Request: GET https://arstechnica.com/space/feed/ "HTTP/1.1 200 OK"
+12:24:50 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+12:24:51 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+12:24:53 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+12:24:55 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+12:24:55 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+12:24:55 [INFO] asn_fetchers.asn_rss: RSS: 119 articles total
+12:24:55 [INFO] asn_scheduler: [RSS] filtered 119 old articles (before 2026-08-08 19:19:16)
+12:24:55 [INFO] asn_scheduler: [RSS] 0 articles
+12:24:55 [INFO] asn_scheduler: [Bidding] filtered 42 old articles (before 2026-08-08 19:19:16)
+12:24:55 [INFO] asn_scheduler: [Bidding] 0 articles
+12:24:55 [INFO] asn_scheduler: Total: 0 unique articles
+12:24:55 [INFO] asn_scheduler: No articles fetched
+12:25:50 [INFO] asn_main: ASN starting...
+12:25:50 [INFO] asn_token_tracker: Token usage restored: 7 records, 405470 total tokens
+12:25:50 [INFO] asn_token_tracker: Pricing loaded: input=¥1.0/M, output=¥2.0/M, last=2026-08-09
+12:25:50 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+12:25:50 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+12:25:50 [INFO] apscheduler.scheduler: Scheduler started
+12:25:50 [INFO] asn_scheduler: Scheduler started: every 240 min
+12:26:02 [INFO] asn_scheduler: === Update cycle start ===
+12:26:02 [INFO] asn_scheduler: Fetching articles published after 2026-08-08 19:19:16
+12:26:03 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+12:26:03 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+12:26:03 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+12:26:03 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+12:26:03 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+12:26:04 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+12:26:04 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+12:26:05 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+12:26:05 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+12:26:06 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+12:26:07 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+12:26:35 [INFO] httpx: HTTP Request: GET https://arstechnica.com/space/feed/ "HTTP/1.1 200 OK"
+12:26:39 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+12:26:41 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+12:26:44 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+12:26:44 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+12:26:45 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+12:26:45 [INFO] asn_fetchers.asn_rss: RSS: 129 articles total
+12:26:45 [INFO] asn_scheduler: [RSS] filtered 129 old articles (before 2026-08-08 19:19:16)
+12:26:45 [INFO] asn_scheduler: [RSS] 0 articles
+12:26:45 [INFO] asn_scheduler: [Bidding] filtered 42 old articles (before 2026-08-08 19:19:16)
+12:26:45 [INFO] asn_scheduler: [Bidding] 0 articles
+12:26:45 [INFO] asn_scheduler: Total: 0 unique articles
+12:26:45 [INFO] asn_scheduler: No articles fetched
+12:26:45 [INFO] asn_token_tracker: Current displayed stories updated: 73
+12:27:50 [INFO] asn_main: ASN starting...
+12:27:51 [INFO] asn_token_tracker: Token usage restored: 7 records, 405470 total tokens
+12:27:51 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+12:27:51 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+12:27:51 [INFO] apscheduler.scheduler: Scheduler started
+12:27:51 [INFO] asn_scheduler: Scheduler started: every 240 min
+12:27:55 [INFO] asn_scheduler: First update of the day: checking latest DeepSeek pricing
+12:27:55 [INFO] asn_token_tracker: Pricing updated (auto): input=¥1.0/M, output=¥2.0/M
+12:27:55 [INFO] asn_scheduler: === Update cycle start ===
+12:27:55 [INFO] asn_scheduler: Fetching articles published after 2026-08-08 19:19:16
+12:27:56 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+12:27:56 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+12:27:56 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+12:27:56 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+12:27:57 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+12:27:57 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+12:27:57 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+12:27:57 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+12:27:57 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+12:27:59 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+12:27:59 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+12:28:04 [INFO] httpx: HTTP Request: GET https://arstechnica.com/space/feed/ "HTTP/1.1 200 OK"
+12:28:09 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+12:28:10 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+12:28:11 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+12:28:12 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+12:28:12 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+12:28:13 [INFO] asn_fetchers.asn_rss: RSS: 129 articles total
+12:28:13 [INFO] asn_scheduler: [RSS] filtered 129 old articles (before 2026-08-08 19:19:16)
+12:28:13 [INFO] asn_scheduler: [RSS] 0 articles
+12:28:13 [INFO] asn_scheduler: [Bidding] filtered 42 old articles (before 2026-08-08 19:19:16)
+12:28:13 [INFO] asn_scheduler: [Bidding] 0 articles
+12:28:13 [INFO] asn_scheduler: Total: 0 unique articles
+12:28:13 [INFO] asn_scheduler: No articles fetched
+12:28:13 [INFO] asn_token_tracker: Token usage recorded (manual_refresh): 0+0=0 tokens, ¥0.0000, 17.8s, 73 stories
+12:28:13 [INFO] asn_token_tracker: Current displayed stories updated: 73
+14:30:09 [INFO] asn_scheduler: === Update cycle start ===
+14:30:09 [INFO] asn_scheduler: Fetching articles published after 2026-08-08 19:19:16
+14:30:10 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+14:30:10 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+14:30:10 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+14:30:11 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+14:30:12 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+14:30:12 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+14:30:12 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+14:30:12 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+14:30:41 [ERROR] asn_fetchers.asn_rss: RSS [Space.com]: 
+14:30:42 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+14:30:43 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+14:30:46 [INFO] httpx: HTTP Request: GET https://arstechnica.com/space/feed/ "HTTP/1.1 200 OK"
+14:30:52 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+14:30:53 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+14:30:55 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+14:30:57 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+14:30:59 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+14:30:59 [INFO] asn_fetchers.asn_rss: RSS: 109 articles total
+14:30:59 [INFO] asn_scheduler: [RSS] filtered 109 old articles (before 2026-08-08 19:19:16)
+14:30:59 [INFO] asn_scheduler: [RSS] 0 articles
+14:30:59 [INFO] asn_scheduler: [Bidding] filtered 42 old articles (before 2026-08-08 19:19:16)
+14:30:59 [INFO] asn_scheduler: [Bidding] 0 articles
+14:30:59 [INFO] asn_scheduler: Total: 0 unique articles
+14:30:59 [INFO] asn_scheduler: No articles fetched
+14:30:59 [INFO] asn_token_tracker: Token usage recorded (manual_refresh): 0+0=0 tokens, ¥0.0000, 50.4s, 73 stories
+14:30:59 [INFO] asn_token_tracker: Current displayed stories updated: 73
+14:34:16 [INFO] asn_scheduler: === Update cycle start ===
+14:34:16 [INFO] asn_scheduler: Fetching articles published after 2026-08-08 19:19:16
+14:34:17 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+14:34:17 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+14:34:17 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+14:34:18 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+14:34:18 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+14:34:18 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+14:34:19 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+14:34:19 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+14:34:19 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+14:34:22 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+14:34:22 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+14:34:24 [INFO] httpx: HTTP Request: GET https://arstechnica.com/space/feed/ "HTTP/1.1 200 OK"
+14:34:30 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+14:34:32 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+14:34:33 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+14:34:34 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+14:34:34 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+14:34:35 [INFO] asn_fetchers.asn_rss: RSS: 129 articles total
+14:34:35 [INFO] asn_scheduler: [RSS] filtered 128 old articles (before 2026-08-08 19:19:16)
+14:34:35 [INFO] asn_scheduler: [RSS] 1 articles
+14:34:35 [INFO] asn_scheduler: [Bidding] filtered 42 old articles (before 2026-08-08 19:19:16)
+14:34:35 [INFO] asn_scheduler: [Bidding] 0 articles
+14:34:35 [INFO] asn_scheduler: Total: 1 unique articles
+14:34:35 [INFO] asn_ai: Title filter skipped 1 articles
+14:34:35 [INFO] asn_ai: AI: 0/1 articles passed filter, tokens: 0in/0out
+14:34:35 [INFO] asn_scheduler: No articles passed filter
+14:34:35 [INFO] asn_token_tracker: Token usage recorded (manual_refresh): 0+0=0 tokens, ¥0.0000, 18.7s, 73 stories
+14:34:35 [INFO] asn_token_tracker: Current displayed stories updated: 73
+14:54:33 [INFO] asn_main: ASN starting...
+14:54:33 [INFO] asn_token_tracker: Token usage restored: 10 records, 405470 total tokens
+14:54:33 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+14:54:33 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+14:54:33 [INFO] apscheduler.scheduler: Scheduler started
+14:54:33 [INFO] asn_scheduler: Scheduler started: every 240 min
+14:55:07 [INFO] asn_scheduler: First update of the day: checking latest DeepSeek pricing
+14:55:07 [INFO] asn_token_tracker: Pricing updated (auto): input=¥1.0/M, output=¥2.0/M
+14:55:07 [INFO] asn_scheduler: === Update cycle start ===
+14:55:07 [INFO] asn_scheduler: Fetching articles published after 2026-08-08 19:19:16
+14:55:08 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+14:55:09 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+14:55:09 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+14:55:10 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+14:55:11 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+14:55:12 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+14:55:12 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+14:55:13 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+14:55:13 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+14:55:13 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+14:55:13 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+14:55:19 [INFO] httpx: HTTP Request: GET https://arstechnica.com/space/feed/ "HTTP/1.1 200 OK"
+14:55:23 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+14:55:25 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+14:55:25 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+14:55:27 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+14:55:28 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+14:55:28 [INFO] asn_fetchers.asn_rss: RSS: 129 articles total
+14:55:28 [INFO] asn_scheduler: [RSS] filtered 128 old articles (before 2026-08-08 19:19:16)
+14:55:28 [INFO] asn_scheduler: [RSS] 1 articles
+14:55:28 [INFO] asn_scheduler: [Bidding] filtered 42 old articles (before 2026-08-08 19:19:16)
+14:55:28 [INFO] asn_scheduler: [Bidding] 0 articles
+14:55:28 [INFO] asn_scheduler: Total: 1 unique articles
+14:55:28 [INFO] asn_ai: Title filter skipped 1 articles
+14:55:28 [INFO] asn_ai: AI: 0/1 articles passed filter, tokens: 0in/0out
+14:55:28 [INFO] asn_scheduler: No articles passed filter
+14:55:28 [INFO] asn_token_tracker: Token usage recorded (manual_refresh): 0+0=0 tokens, ¥0.0000, 20.9s, 73 stories
+14:55:28 [INFO] asn_token_tracker: Current displayed stories updated: 73
+15:03:15 [INFO] asn_main: ASN starting...
+15:03:15 [INFO] asn_token_tracker: Token usage restored: 11 records, 405470 total tokens
+15:03:15 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+15:03:15 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+15:03:15 [INFO] apscheduler.scheduler: Scheduler started
+15:03:15 [INFO] asn_scheduler: Scheduler started: every 240 min
+15:09:57 [INFO] asn_main: ASN starting...
+15:09:57 [INFO] asn_token_tracker: Token usage restored: 11 records, 405470 total tokens
+15:09:57 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+15:09:57 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+15:09:57 [INFO] apscheduler.scheduler: Scheduler started
+15:09:57 [INFO] asn_scheduler: Scheduler started: every 240 min
+15:09:57 [INFO] asn_scheduler: Scheduler stopped
+15:09:57 [INFO] asn_main: ASN stopped
+15:09:57 [INFO] apscheduler.scheduler: Scheduler has been shut down
+15:12:36 [INFO] asn_main: ASN starting...
+15:12:36 [INFO] asn_token_tracker: Token usage restored: 11 records, 405470 total tokens
+15:12:36 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+15:12:36 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+15:12:36 [INFO] apscheduler.scheduler: Scheduler started
+15:12:36 [INFO] asn_scheduler: Scheduler started: every 240 min
+15:12:36 [INFO] asn_scheduler: Scheduler stopped
+15:12:36 [INFO] asn_main: ASN stopped
+15:12:36 [INFO] apscheduler.scheduler: Scheduler has been shut down
+15:17:27 [INFO] asn_scheduler: Scheduler interval updated to 120 min
+15:20:30 [INFO] asn_scheduler: Scheduler interval updated to 30 min
+15:20:33 [INFO] asn_scheduler: Scheduler interval updated to 60 min
+15:20:36 [INFO] asn_scheduler: Scheduler interval updated to 120 min
+15:20:40 [INFO] asn_scheduler: Scheduler interval updated to 240 min
+15:20:43 [INFO] asn_scheduler: Scheduler interval updated to 480 min
+15:22:13 [INFO] asn_scheduler: Scheduler interval updated to 120 min
+15:22:17 [INFO] asn_scheduler: Scheduler interval updated to 480 min
+15:22:39 [INFO] asn_main: ASN starting...
+15:22:39 [INFO] asn_token_tracker: Token usage restored: 11 records, 405470 total tokens
+15:22:39 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+15:22:39 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+15:22:39 [INFO] apscheduler.scheduler: Scheduler started
+15:22:39 [INFO] asn_scheduler: Scheduler started: every 480 min
+15:25:56 [INFO] asn_main: ASN starting...
+15:25:56 [INFO] asn_token_tracker: Token usage restored: 11 records, 405470 total tokens
+15:25:56 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+15:25:56 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+15:25:56 [INFO] apscheduler.scheduler: Scheduler started
+15:25:56 [INFO] asn_scheduler: Scheduler started: every 480 min
+15:27:59 [INFO] asn_main: Re-filter: filtered out 0 stories by title rules
+15:27:59 [INFO] asn_ai: No stories missing title_zh
+15:27:59 [INFO] asn_token_tracker: Current displayed stories updated: 73
+15:27:59 [INFO] asn_main: Force dedup: 73 -> 73 (filtered=0, merged=0)
+15:28:04 [INFO] asn_scheduler: First update of the day: checking latest DeepSeek pricing
+15:28:04 [INFO] asn_token_tracker: Pricing updated (auto): input=¥1.0/M, output=¥2.0/M
+15:28:04 [INFO] asn_scheduler: === Update cycle start ===
+15:28:04 [INFO] asn_scheduler: Fetching articles published after 2026-08-08 19:19:16
+15:28:06 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+15:28:06 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+15:28:07 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+15:28:07 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+15:28:07 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+15:28:07 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+15:28:08 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+15:28:08 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+15:28:08 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+15:28:11 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+15:28:11 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+15:28:17 [INFO] httpx: HTTP Request: GET https://arstechnica.com/space/feed/ "HTTP/1.1 200 OK"
+15:28:22 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+15:28:26 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+15:28:27 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+15:28:28 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+15:28:30 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+15:28:30 [INFO] asn_fetchers.asn_rss: RSS: 129 articles total
+15:28:30 [INFO] asn_scheduler: [RSS] filtered 128 old articles (before 2026-08-08 19:19:16)
+15:28:30 [INFO] asn_scheduler: [RSS] 1 articles
+15:28:30 [INFO] asn_scheduler: [Bidding] filtered 42 old articles (before 2026-08-08 19:19:16)
+15:28:30 [INFO] asn_scheduler: [Bidding] 0 articles
+15:28:30 [INFO] asn_scheduler: Total: 1 unique articles
+15:28:30 [INFO] asn_ai: Title filter skipped 1 articles
+15:28:30 [INFO] asn_ai: AI: 0/1 articles passed filter, tokens: 0in/0out
+15:28:30 [INFO] asn_scheduler: No articles passed filter
+15:28:30 [INFO] asn_token_tracker: Token usage recorded (manual_refresh): 0+0=0 tokens, ¥0.0000, 25.8s, 73 stories
+15:28:30 [INFO] asn_token_tracker: Current displayed stories updated: 73
+15:44:46 [INFO] asn_main: ASN starting...
+15:44:46 [INFO] asn_token_tracker: Token usage restored: 12 records, 405470 total tokens
+15:44:46 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+15:44:46 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+15:44:46 [INFO] apscheduler.scheduler: Scheduler started
+15:44:46 [INFO] asn_scheduler: Scheduler started: every 480 min
+15:45:10 [INFO] asn_scheduler: First update of the day: checking latest DeepSeek pricing
+15:45:10 [INFO] asn_token_tracker: Pricing updated (auto): input=¥1.0/M, output=¥2.0/M
+15:45:10 [INFO] asn_scheduler: === Update cycle start ===
+15:45:12 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+15:45:12 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+15:45:13 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+15:45:13 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+15:45:13 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+15:45:14 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+15:45:14 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+15:45:15 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+15:45:15 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+15:45:16 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+15:45:16 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+15:45:20 [INFO] httpx: HTTP Request: GET https://arstechnica.com/space/feed/ "HTTP/1.1 200 OK"
+15:45:24 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+15:45:25 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+15:45:27 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+15:45:28 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+15:45:28 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+15:45:28 [INFO] asn_fetchers.asn_rss: RSS: 129 articles total
+15:45:28 [INFO] asn_scheduler: [RSS] 129 articles
+15:45:28 [INFO] asn_scheduler: [Bidding] 42 articles
+15:45:28 [INFO] asn_scheduler: Total: 171 unique articles
+15:45:29 [INFO] asn_scheduler: Title similarity filter: 71 duplicates removed, 100 new articles kept
+15:45:29 [INFO] asn_ai: Title filter skipped 14 articles
+15:45:29 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+15:45:52 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+15:46:37 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+15:46:54 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+15:47:21 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+15:47:40 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+15:48:08 [INFO] asn_ai: AI: 40/100 articles passed filter, tokens: 14510in/20732out
+15:48:08 [INFO] asn_storage: Merge: 40 new, 0 updated
+15:48:08 [INFO] asn_storage: Cleaned 40 old stories (>10d)
+15:48:08 [INFO] asn_ai: No stories missing title_zh
+15:48:09 [INFO] asn_token_tracker: Token usage recorded (manual_refresh): 14510+20732=35242 tokens, ¥0.0560, 178.1s, 73 stories
+15:48:09 [INFO] asn_token_tracker: Current displayed stories updated: 73
+15:48:09 [INFO] asn_scheduler: === Update done: 73 stories (0 new) in 178.1s ===
+15:49:43 [INFO] asn_scheduler: === Update cycle start ===
+15:49:45 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+15:49:45 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+15:49:45 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+15:49:45 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+15:49:46 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+15:49:46 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+15:49:47 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+15:49:47 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+15:49:47 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+15:49:49 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+15:49:49 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+15:49:52 [INFO] httpx: HTTP Request: GET https://arstechnica.com/space/feed/ "HTTP/1.1 200 OK"
+15:49:57 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+15:50:00 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+15:50:01 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+15:50:02 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+15:50:04 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+15:50:05 [INFO] asn_fetchers.asn_rss: RSS: 129 articles total
+15:50:05 [INFO] asn_scheduler: [RSS] 129 articles
+15:50:05 [INFO] asn_scheduler: [Bidding] 42 articles
+15:50:05 [INFO] asn_scheduler: Total: 171 unique articles
+15:50:05 [INFO] asn_scheduler: Title similarity filter: 71 duplicates removed, 100 new articles kept
+15:50:05 [INFO] asn_ai: Title filter skipped 14 articles
+15:50:05 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+15:51:00 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+15:51:59 [ERROR] asn_ai: DeepSeek API error: Server disconnected without sending a response.
+15:52:16 [ERROR] asn_ai: DeepSeek API error: Server disconnected without sending a response.
+15:52:18 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+15:52:35 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+15:53:03 [INFO] asn_ai: AI: 37/100 articles passed filter, tokens: 9482in/19383out
+15:53:03 [INFO] asn_storage: Merge: 37 new, 0 updated
+15:53:03 [INFO] asn_storage: Cleaned 37 old stories (>10d)
+15:53:03 [INFO] asn_ai: No stories missing title_zh
+15:53:03 [INFO] asn_token_tracker: Token usage recorded (manual_refresh): 9482+19383=28865 tokens, ¥0.0482, 199.3s, 73 stories
+15:53:03 [INFO] asn_token_tracker: Current displayed stories updated: 73
+15:53:03 [INFO] asn_scheduler: === Update done: 73 stories (0 new) in 199.3s ===
+16:12:26 [INFO] asn_main: ASN starting...
+16:12:26 [INFO] asn_token_tracker: Token usage restored: 14 records, 469577 total tokens
+16:12:26 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+16:12:26 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+16:12:26 [INFO] apscheduler.scheduler: Scheduler started
+16:12:26 [INFO] asn_scheduler: Scheduler started: every 480 min
+16:28:41 [INFO] asn_main: ASN starting...
+16:28:41 [INFO] asn_token_tracker: Token usage restored: 14 records, 469577 total tokens
+16:28:41 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+16:28:41 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+16:28:41 [INFO] apscheduler.scheduler: Scheduler started
+16:28:41 [INFO] asn_scheduler: Scheduler started: every 480 min
+16:28:51 [INFO] asn_main: ASN starting...
+16:28:51 [INFO] asn_token_tracker: Token usage restored: 14 records, 469577 total tokens
+16:28:51 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+16:28:51 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+16:28:51 [INFO] apscheduler.scheduler: Scheduler started
+16:28:51 [INFO] asn_scheduler: Scheduler started: every 480 min
+16:28:51 [INFO] asn_scheduler: Scheduler stopped
+16:28:51 [INFO] asn_main: ASN stopped
+16:28:51 [INFO] apscheduler.scheduler: Scheduler has been shut down
+16:29:17 [INFO] asn_main: ASN starting...
+16:29:17 [INFO] asn_token_tracker: Token usage restored: 14 records, 469577 total tokens
+16:29:17 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+16:29:17 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+16:29:17 [INFO] apscheduler.scheduler: Scheduler started
+16:29:17 [INFO] asn_scheduler: Scheduler started: every 480 min
+16:30:04 [INFO] asn_main: ASN starting...
+16:30:04 [INFO] asn_token_tracker: Token usage restored: 14 records, 469577 total tokens
+16:30:04 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+16:30:04 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+16:30:04 [INFO] apscheduler.scheduler: Scheduler started
+16:30:04 [INFO] asn_scheduler: Scheduler started: every 480 min
+16:30:48 [INFO] asn_scheduler: First update of the day: checking latest DeepSeek pricing
+16:30:48 [INFO] asn_token_tracker: Pricing updated (auto): input=¥1.0/M, output=¥2.0/M
+16:30:48 [INFO] asn_scheduler: === Update cycle start ===
+16:30:50 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+16:30:50 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+16:30:50 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+16:30:50 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+16:30:50 [INFO] httpx: HTTP Request: GET https://api.spaceflightnewsapi.net/v4/articles/?limit=50&published_at__gt=2026-08-02T08%3A30%3A49&ordering=-published_at "HTTP/1.1 200 OK"
+16:30:51 [INFO] asn_fetchers.asn_snapi: SpaceflightNewsAPI: 50 articles
+16:30:51 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+16:30:52 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+16:30:52 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+16:30:52 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+16:31:21 [ERROR] asn_fetchers.asn_rss: RSS [Space.com]: 
+16:31:22 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+16:31:23 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+16:31:27 [INFO] httpx: HTTP Request: GET https://arstechnica.com/space/feed/ "HTTP/1.1 200 OK"
+16:31:36 [INFO] httpx: HTTP Request: GET https://www.nasaspaceflight.com/feed/ "HTTP/1.1 403 Forbidden"
+16:31:36 [ERROR] asn_fetchers.asn_rss: RSS [NASASpaceFlight]: Client error '403 Forbidden' for url 'https://www.nasaspaceflight.com/feed/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+16:31:37 [INFO] httpx: HTTP Request: GET https://spaceflightinsider.com/feed/ "HTTP/1.1 404 Not Found"
+16:31:37 [ERROR] asn_fetchers.asn_rss: RSS [SpaceFlight Insider]: Client error '404 Not Found' for url 'https://spaceflightinsider.com/feed/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+16:31:38 [INFO] httpx: HTTP Request: GET https://spaceq.ca/feed/ "HTTP/1.1 200 OK"
+16:31:41 [INFO] httpx: HTTP Request: GET https://www.satnews.com/rss.xml "HTTP/1.1 301 Moved Permanently"
+16:31:42 [INFO] httpx: HTTP Request: GET http://satnews.com/rss.xml "HTTP/1.1 403 Forbidden"
+16:31:42 [ERROR] asn_fetchers.asn_rss: RSS [SatNews]: Client error '403 Forbidden' for url 'http://satnews.com/rss.xml'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+16:31:43 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+16:31:44 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+16:31:45 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+16:31:46 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+16:32:08 [ERROR] asn_fetchers.asn_rss: RSS [Air & Space Forces]: 
+16:32:30 [ERROR] asn_fetchers.asn_rss: RSS [BBC Science]: All connection attempts failed
+16:32:30 [ERROR] asn_fetchers.asn_rss: RSS [CNN Tech]: 
+16:32:32 [INFO] httpx: HTTP Request: GET https://moxie.foxnews.com/google-publisher/science.xml "HTTP/1.1 200 OK"
+16:32:53 [ERROR] asn_fetchers.asn_rss: RSS [NYT Science]: All connection attempts failed
+16:33:14 [ERROR] asn_fetchers.asn_rss: RSS [The Guardian Science]: All connection attempts failed
+16:33:35 [ERROR] asn_fetchers.asn_rss: RSS [Google News Space]: All connection attempts failed
+16:33:57 [ERROR] asn_fetchers.asn_rss: RSS [Google News SpaceX]: All connection attempts failed
+16:34:18 [ERROR] asn_fetchers.asn_rss: RSS [Google News Lunar]: All connection attempts failed
+16:34:39 [ERROR] asn_fetchers.asn_rss: RSS [Google News 中国航天]: All connection attempts failed
+16:34:39 [INFO] asn_fetchers.asn_rss: RSS: 139 articles total
+16:34:39 [INFO] asn_scheduler: [RSS] 139 articles
+16:34:39 [INFO] asn_scheduler: [Bidding] 42 articles
+16:34:39 [INFO] asn_scheduler: [SpaceflightNewsAPI] 50 articles
+16:34:39 [INFO] asn_scheduler: Total: 201 unique articles
+16:34:39 [INFO] asn_scheduler: Title similarity filter: 63 duplicates removed, 138 new articles kept
+16:34:39 [INFO] asn_ai: Title filter skipped 8 articles
+16:34:40 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+16:35:34 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+16:36:14 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+16:36:56 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+16:37:15 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+16:37:30 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+16:38:30 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+16:39:13 [ERROR] asn_ai: DeepSeek API error: Server disconnected without sending a response.
+16:39:15 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+16:39:42 [INFO] asn_ai: AI: 63/138 articles passed filter, tokens: 19283in/38701out
+16:39:42 [INFO] asn_storage: Merge: 61 new, 2 updated
+16:39:42 [INFO] asn_storage: Cleaned 44 old stories (>10d)
+16:39:42 [INFO] asn_ai: No stories missing title_zh
+16:39:42 [INFO] asn_token_tracker: Token usage recorded (manual_refresh): 19283+38701=57984 tokens, ¥0.0967, 534.0s, 90 stories
+16:39:42 [INFO] asn_token_tracker: Current displayed stories updated: 90
+16:39:42 [INFO] asn_scheduler: === Update done: 90 stories (17 new) in 534.0s ===
+16:58:30 [INFO] asn_main: ASN starting...
+16:58:30 [INFO] asn_token_tracker: Token usage restored: 15 records, 527561 total tokens
+16:58:30 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+16:58:30 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+16:58:30 [INFO] apscheduler.scheduler: Scheduler started
+16:58:30 [INFO] asn_scheduler: Scheduler started: every 480 min
+16:58:55 [INFO] asn_scheduler: First update of the day: checking latest DeepSeek pricing
+16:58:55 [INFO] asn_token_tracker: Pricing updated (auto): input=¥1.0/M, output=¥2.0/M
+16:58:55 [INFO] asn_scheduler: === Update cycle start ===
+16:58:58 [INFO] httpx: HTTP Request: GET https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2509&num=50&page=1 "HTTP/1.1 200 OK"
+16:58:58 [INFO] asn_fetchers.asn_sina: 新浪科技: 1 space articles
+16:58:58 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+16:58:58 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+16:58:58 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+16:58:58 [INFO] httpx: HTTP Request: GET https://moxie.foxnews.com/google-publisher/science.xml "HTTP/1.1 200 OK"
+16:58:58 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+16:58:58 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+16:58:58 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+16:58:58 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+16:58:58 [ERROR] asn_fetchers.asn_rss: RSS [CNN Tech]: 
+16:58:58 [INFO] httpx: HTTP Request: GET https://spaceq.ca/feed/ "HTTP/1.1 200 OK"
+16:58:59 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+16:58:59 [INFO] httpx: HTTP Request: GET https://api.spaceflightnewsapi.net/v4/articles/?limit=50&published_at__gt=2026-08-02T08%3A58%3A56&ordering=-published_at "HTTP/1.1 200 OK"
+16:58:59 [INFO] httpx: HTTP Request: GET https://spacepolicyonline.com/feed/ "HTTP/1.1 200 OK"
+16:58:59 [INFO] asn_fetchers.asn_snapi: SpaceflightNewsAPI: 50 articles
+16:58:59 [INFO] httpx: HTTP Request: GET https://spaceflightinsider.com/feed/ "HTTP/1.1 404 Not Found"
+16:58:59 [ERROR] asn_fetchers.asn_rss: RSS [SpaceFlight Insider]: Client error '404 Not Found' for url 'https://spaceflightinsider.com/feed/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+16:58:59 [INFO] httpx: HTTP Request: GET https://www.nasaspaceflight.com/feed/ "HTTP/1.1 403 Forbidden"
+16:58:59 [ERROR] asn_fetchers.asn_rss: RSS [NASASpaceFlight]: Client error '403 Forbidden' for url 'https://www.nasaspaceflight.com/feed/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+16:58:59 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+16:58:59 [INFO] httpx: HTTP Request: GET https://www.satnews.com/rss.xml "HTTP/1.1 301 Moved Permanently"
+16:58:59 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+16:58:59 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+16:59:00 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+16:59:01 [INFO] httpx: HTTP Request: GET https://arstechnica.com/space/feed/ "HTTP/1.1 200 OK"
+16:59:01 [INFO] httpx: HTTP Request: GET http://satnews.com/rss.xml "HTTP/1.1 403 Forbidden"
+16:59:01 [ERROR] asn_fetchers.asn_rss: RSS [SatNews]: Client error '403 Forbidden' for url 'http://satnews.com/rss.xml'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+16:59:01 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+16:59:01 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+16:59:17 [ERROR] asn_fetchers.asn_rss: RSS [DefenseScoop]: 
+16:59:19 [ERROR] asn_fetchers.asn_rss: RSS [BBC Science]: All connection attempts failed
+16:59:19 [ERROR] asn_fetchers.asn_rss: RSS [NYT Science]: All connection attempts failed
+16:59:19 [ERROR] asn_fetchers.asn_rss: RSS [The Guardian Science]: All connection attempts failed
+16:59:19 [INFO] asn_fetchers.asn_rss: RSS: 168 articles total
+16:59:19 [INFO] asn_scheduler: [RSS] 168 articles
+16:59:19 [INFO] asn_scheduler: [Bidding] 42 articles
+16:59:19 [INFO] asn_scheduler: [SpaceflightNewsAPI] 50 articles
+16:59:19 [INFO] asn_scheduler: [SinaTech] 1 articles
+16:59:19 [INFO] asn_scheduler: Total: 231 unique articles
+16:59:19 [INFO] asn_scheduler: Title similarity filter: 89 duplicates removed, 142 new articles kept
+16:59:19 [INFO] asn_ai: Title filter skipped 22 articles
+16:59:20 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+17:00:12 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+17:01:01 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+17:01:45 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+17:01:51 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+17:02:14 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+17:02:19 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+17:02:48 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+17:03:30 [INFO] asn_ai: AI: 47/142 articles passed filter, tokens: 19736in/31177out
+17:03:30 [INFO] asn_storage: Merge: 47 new, 0 updated
+17:03:31 [INFO] asn_storage: Cleaned 36 old stories (>10d)
+17:03:31 [INFO] asn_ai: No stories missing title_zh
+17:03:31 [INFO] asn_token_tracker: Token usage recorded (manual_refresh): 19736+31177=50913 tokens, ¥0.0821, 275.9s, 101 stories
+17:03:31 [INFO] asn_token_tracker: Current displayed stories updated: 101
+17:03:31 [INFO] asn_scheduler: === Update done: 101 stories (11 new) in 275.9s ===
+17:05:39 [INFO] asn_scheduler: === Update cycle start ===
+17:05:41 [INFO] httpx: HTTP Request: GET https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2509&num=50&page=1 "HTTP/1.1 200 OK"
+17:05:41 [INFO] asn_fetchers.asn_sina: 新浪科技: 1 space articles
+17:05:41 [INFO] httpx: HTTP Request: GET https://spacenews.com/feed/ "HTTP/1.1 200 OK"
+17:05:41 [ERROR] asn_fetchers.asn_rss: RSS [CNN Tech]: 
+17:05:41 [INFO] httpx: HTTP Request: GET https://www.nasa.gov/news-release/feed/ "HTTP/1.1 200 OK"
+17:05:41 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/space/index.xml "HTTP/1.1 200 OK"
+17:05:41 [INFO] httpx: HTTP Request: GET https://www.airandspaceforces.com/feed/ "HTTP/1.1 200 OK"
+17:05:42 [INFO] httpx: HTTP Request: GET https://spaceflightinsider.com/feed/ "HTTP/1.1 404 Not Found"
+17:05:42 [ERROR] asn_fetchers.asn_rss: RSS [SpaceFlight Insider]: Client error '404 Not Found' for url 'https://spaceflightinsider.com/feed/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+17:05:42 [INFO] httpx: HTTP Request: GET https://defensescoop.com/feed/ "HTTP/1.1 200 OK"
+17:05:42 [INFO] httpx: HTTP Request: GET https://www.keeptrack.space/rss.xml "HTTP/1.1 301 Moved Permanently"
+17:05:42 [INFO] httpx: HTTP Request: GET https://spaceq.ca/feed/ "HTTP/1.1 200 OK"
+17:05:42 [INFO] httpx: HTTP Request: GET https://spaceflightnow.com/feed/ "HTTP/1.1 200 OK"
+17:05:42 [INFO] httpx: HTTP Request: GET https://www.nasaspaceflight.com/feed/ "HTTP/1.1 403 Forbidden"
+17:05:42 [INFO] httpx: HTTP Request: GET https://moxie.foxnews.com/google-publisher/science.xml "HTTP/1.1 200 OK"
+17:05:42 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+17:05:42 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%81%AB%E7%AE%AD&page=1 "HTTP/1.1 200 "
+17:05:42 [INFO] httpx: HTTP Request: GET https://www.space.com/feeds.xml "HTTP/1.1 200 OK"
+17:05:42 [INFO] httpx: HTTP Request: GET https://keeptrack.space/rss.xml "HTTP/1.1 200 OK"
+17:05:43 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E5%8D%AB%E6%98%9F&page=1 "HTTP/1.1 200 "
+17:05:43 [ERROR] asn_fetchers.asn_rss: RSS [NASASpaceFlight]: Client error '403 Forbidden' for url 'https://www.nasaspaceflight.com/feed/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+17:05:43 [INFO] httpx: HTTP Request: GET https://api.spaceflightnewsapi.net/v4/articles/?limit=50&published_at__gt=2026-08-02T09%3A05%3A40&ordering=-published_at "HTTP/1.1 200 OK"
+17:05:43 [INFO] httpx: HTTP Request: GET https://www.satnews.com/rss.xml "HTTP/1.1 301 Moved Permanently"
+17:05:43 [INFO] asn_fetchers.asn_snapi: SpaceflightNewsAPI: 50 articles
+17:05:44 [INFO] httpx: HTTP Request: GET http://satnews.com/rss.xml "HTTP/1.1 403 Forbidden"
+17:05:44 [ERROR] asn_fetchers.asn_rss: RSS [SatNews]: Client error '403 Forbidden' for url 'http://satnews.com/rss.xml'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+17:05:44 [INFO] httpx: HTTP Request: GET https://arstechnica.com/space/feed/ "HTTP/1.1 200 OK"
+17:05:45 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E7%A9%BA%E9%97%B4%E7%AB%99&page=1 "HTTP/1.1 200 "
+17:05:45 [INFO] httpx: HTTP Request: GET https://bulletin.cebpubservice.com/xxfbcmses/search/bulletin.html?word=%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9&page=1 "HTTP/1.1 200 "
+17:05:45 [INFO] asn_fetchers.asn_bidding: Bidding: 42 unique articles
+17:05:52 [ERROR] asn_fetchers.asn_rss: RSS [Space Policy Online]: Server disconnected without sending a response.
+17:06:02 [ERROR] asn_fetchers.asn_rss: RSS [The Guardian Science]: All connection attempts failed
+17:06:02 [ERROR] asn_fetchers.asn_rss: RSS [BBC Science]: All connection attempts failed
+17:06:02 [ERROR] asn_fetchers.asn_rss: RSS [NYT Science]: All connection attempts failed
+17:06:02 [INFO] asn_fetchers.asn_rss: RSS: 168 articles total
+17:06:02 [INFO] asn_scheduler: [RSS] 168 articles
+17:06:02 [INFO] asn_scheduler: [Bidding] 42 articles
+17:06:02 [INFO] asn_scheduler: [SpaceflightNewsAPI] 50 articles
+17:06:02 [INFO] asn_scheduler: [SinaTech] 1 articles
+17:06:02 [INFO] asn_scheduler: Total: 231 unique articles
+17:06:03 [INFO] asn_scheduler: Title similarity filter: 98 duplicates removed, 133 new articles kept
+17:06:03 [INFO] asn_ai: Title filter skipped 22 articles
+17:06:03 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+17:06:32 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+17:07:00 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+17:07:16 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+17:07:34 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+17:08:13 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+17:09:05 [ERROR] asn_ai: DeepSeek API error: Server disconnected without sending a response.
+17:09:07 [INFO] httpx: HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+17:09:15 [INFO] asn_ai: AI: 39/133 articles passed filter, tokens: 16439in/21509out
+17:09:15 [INFO] asn_storage: Merge: 39 new, 0 updated
+17:09:15 [INFO] asn_storage: Cleaned 37 old stories (>10d)
+17:09:15 [INFO] asn_ai: No stories missing title_zh
+17:09:15 [INFO] asn_token_tracker: Token usage recorded (manual_refresh): 16439+21509=37948 tokens, ¥0.0595, 216.1s, 103 stories
+17:09:15 [INFO] asn_token_tracker: Current displayed stories updated: 103
+17:09:15 [INFO] asn_scheduler: === Update done: 103 stories (2 new) in 216.1s ===
+17:20:14 [INFO] asn_main: ASN starting...
+17:20:14 [INFO] asn_token_tracker: Token usage restored: 17 records, 616422 total tokens
+17:20:14 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+17:20:14 [INFO] apscheduler.scheduler: Added job "ASN定时更新" to job store "default"
+17:20:14 [INFO] apscheduler.scheduler: Scheduler started
+17:20:14 [INFO] asn_scheduler: Scheduler started: every 480 min
